@@ -4,6 +4,8 @@ header{
 body{
     background-color: #ffffff;
     background-image: linear-gradient(90deg, #ffffff 0%, #d7e1ec 74%);
+    font-family: 'Indie Flower', cursive;
+    font-size: larger;
 }
 div#external {
     width: 500px;
@@ -43,17 +45,17 @@ div#bottombuttons{
     
 }
 div#grids{
-    display: flex;
-    width: 40%;
-    justify-content: space-evenly;
-    position: relative;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+
+    justify-items: center;
 }
 
 button{
     height: max-content;
     width: max-content;
-    font-size: large;
-    font-family: 'Heebo', Helvetica, Arial, sans-serif;
+    font-size: larger;
+    font-family: 'Indie Flower', cursive;
 	font-weight: 500;
     border-radius: 7px;
     border: 1px solid black;
@@ -66,19 +68,21 @@ button:hover{
     background-color: #537895;
     background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
     color: white;
-    z-index: 2;
-    font-size: large;
-    box-shadow: black;
-    
+    transform: scale(1.02) translateY(-0.15rem);
+    box-shadow: 0 0.1rem 1rem #10cbcf;
+    border: 1px solid #10cbcf;
 }
-
+button:active{
+    transform: scale(.9) translateY(0);
+    border: 0px;
+}
 
 #userSize{
     height: max-content;
     width: 100px;
-    font-size: large;
+    font-size: larger;
 }
-footer{
+/* footer{
     position: fixed;
     bottom: 0;
     right: 0;
@@ -86,4 +90,13 @@ footer{
     display: flex;
     justify-content: center;
     font-size: large;
+} */
+#mycolor{
+    height: 90%;
+}
+#mycolor:hover{
+    color: white;
+    transform: scale(1.02) translateY(-0.15rem);
+    box-shadow: 0 0.1rem 1rem #ffffff;
+    border: 1px solid #ffffff;
 }

@@ -116,6 +116,7 @@ function changeColor(){
 }
 function reset(){
     userColor='rgb(0,0,0)';
+    document.querySelector('#mycolor').value = '#000000';
     clear();
     document.querySelector('#userSize').value = 16;
     userSize = document.querySelector('#userSize').value

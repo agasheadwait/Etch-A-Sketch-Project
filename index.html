@@ -5,11 +5,13 @@
             Etch-A-Sketch
         </title>
         <link rel='stylesheet' href='style.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
             <h1>Etch-A-Sketch</h1>
+            <h2>Double tap on the board to start drawing</h2>
         </header>
         <div id='external'>
 
@@ -33,9 +35,14 @@
         <br>
         <div style="display:flex; justify-content: center;">
             <div id='grids'>
+                <label>Select grid size and then select mode:</label>
                 <input type='number' id='userSize' min='1' value='16'>
-                <button id='toggle' onclick=toggle()>Toggle Grid</button>
+                <button id='toggle' onclick=toggle()>Toggle Grid Lines</button>
+                <br>
             </div>
+        </div>
+        <div style="display:flex; justify-content: center;">
+            <h5>Best when used with a mouse</h5>
         </div>
 
         <footer>
@@ -43,6 +50,7 @@
             <p>
                 Made By- Adwait Agashe  &emsp;&emsp; Part of The Odin Project Curriculum
             </p>
+            
         </div>
         </footer>
     </body>
