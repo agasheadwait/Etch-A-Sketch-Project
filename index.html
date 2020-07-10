@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Etch-A-Sketch
+        </title>
+        <link rel='stylesheet' href='style.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <h1>Etch-A-Sketch</h1>
+        </header>
+        <div id='external'>
+
+        </div>
+        <br><br>
+        <div style="display: flex;justify-content: center;">
+            <div id='changebutton'>
+                <button id = 'normal mode' onclick=normalmode()>Normal Mode</button>
+                <button id = 'reset' onclick=reset()>Reset</button>
+                <button id = 'sketch' onclick=sketchmode()>Sketch Mode</button>
+            </div>
+        </div>
+        <br>
+        <div style="display:flex; justify-content: center;">
+            <div id='bottombuttons'>
+                <label id='colorselect'>Select color for Normal Mode and Click the button:</label>
+                <input type='color' id='mycolor'>
+                <button id = 'colorchange' onclick=changeColor()>Change Color</button>
+            </div>
+        </div>
+        <br>
+        <div style="display:flex; justify-content: center;">
+            <div id='grids'>
+                <input type='number' id='userSize' min='1' value='16'>
+                <button id='toggle' onclick=toggle()>Toggle Grid</button>
+            </div>
+        </div>
+
+        <footer>
+            <div style="display: flex; justify-content: center;">
+            <p>
+                Made By- Adwait Agashe  &emsp;&emsp; Part of The Odin Project Curriculum
+            </p>
+        </div>
+        </footer>
+    </body>
+    <script src='./script.js' type='text/javascript'></script>
+</html>
